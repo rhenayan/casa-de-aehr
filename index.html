@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="tablet.css">
+    <link rel="stylesheet" type="text/css" href="desktop.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    
+    <!--google fonts-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC:wght@400;900&display=swap" rel="stylesheet"> 
+    
+    <title>Casa de Aehr</title>
+</head>
+<body>
+   
+
+    <header>
+
+
+        <nav>
+                
+            <div class="mobile-menu">
+                <div class="toggle">
+                    <span class="fas fa-bars icon"></span><span>Menu</span>
+                </div>
+
+                <ul class="menu-list">
+                    <li><a class="select"  href="#">Home</a></li>
+                    <li><a class="select"  href="#about">About</a></li>
+                    <li><a class="select"  href="#rooms">Rooms</a></li>
+                    <li><a class="select"  href="#resto">Bar & Restaurant</a></li>
+                    <li><a class="select"  href="#events">Events</a></li>
+                    <li><a class="select"  href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+
+                
+
+            <div class="desktop-menu">
+                <ul class="desktop-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#resto">Bar & Restaurant</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="header-overlay"></div>
+        <div class="header-contents">
+            <h1>casa de aehr</h1>
+            <h4>the best place to be</h4>
+      
+           <video  autoplay muted loop class="header-video">
+                <source src="header-video.mp4" type="video/mp4">  
+            </video> 
+        
+        </div>
+
+
+
+    </header>
+
+
+
+    <main>
+    
+
+   <h2 id="about" class="section-heading about-heading">hotel for modern travellers</h2>
+   
+    
+    <div class="main-container">
+                <div class="about-items element-gap"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium officia exercitationem aperiam sunt magni repellendus ea perspiciatis cupiditate. Adipisci facilis exercitationem ad voluptatem fugit blanditiis aspernatur qui, modi optio fugiat earum officia recusandae, eum eaque est, quasi nulla eligendi laudantium atque quibusdam unde explicabo dolore.</p></div>
+
+                <div class="about-items element-gap"><img src="images/about-pic1.jpg" alt="surrounding"></div>
+
+                <div class="about-items element-gap"><p> Nesciunt ipsa repudiandae obcaecati blanditiis dignissimos id est aliquam exercitationem facilis. Minima corporis nisi libero necessitatibus vero rem nihil minus illo vel tempore ab aliquam sunt illum dolor.
+                </p></div>
+
+                <div class="about-items box-padding-img"><img src="images/about-pic2.jpg" alt="surrounding"></div>
+
+    </div>
+   
+
+    <div id="rooms" class="room-heading"> 
+        <h4>rooms</h4>
+        <h2>stay with us</h2></div>
+    <div class="main-container">
+
+        <div class="room-slide-images">
+           
+                <img src="images/single-bed.jpg" alt="single bed">
+          
+        </div>
+
+
+        <div class="room-grid-texts">
+
+
+            <ul class="bed-list-type element-gap">
+                <li class="single">single</li>
+                <li class="double">double </li>
+                <li class="superior">superior </li>
+            </ul>
+
+            <p class="element-gap"> Temporibus distinctio obcaecati aliquid, voluptates ad quibusdam, dicta voluptatem quidem aspernatur fugiat, sunt aperiam possimus animi. </p>
+
+            <div class="btn"><a href="#">view all rooms</a></div>
+
+
+        </div>
+    </div>
+
+
+    <div id="resto" class="main-container">
+
+        <div class="resto-texts box-padding">
+
+            <h2 class="element-gap">eat</h2>
+            <p class="element-gap"> Totam quasi quas ipsam quae inventore deserunt tempora libero natus debitis nemo quisquam sequi, perferendis aut vero explicabo. Ipsa explicabo ducimus, sequi adipisci sit perferendis eum itaque dolor.</p>
+            <div class="btn element-gap"><a href="#">see more</a></div>
+
+        </div>
+
+
+
+        <div class="glider-contain">
+
+            <div class="glider-images">
+
+                <button aria-label="Previous" class="glider-prev prev-eat" ><i class="fas fa-arrow-circle-left"></i></button>
+                
+                <div class="glider-eat">
+                    <div><img src="images/food-1.jpg"></div>
+                    <div><img src="images/food-2.jpg"></div>
+                    <div><img src="images/food-3.jpg"></div>
+                    <div><img src="images/food-4.jpg"></div>
+                    <div><img src="images/food-5.jpg"></div>
+                </div>
+                
+                <button aria-label="Next" class="glider-next next-eat" ><i class="fas fa-arrow-circle-right"></i></button>
+            </div>
+            
+            <div role="tablist" id="dots" class="dots"></div> 
+            
+        </div>
+    </div> 
+
+
+    <div class="main-container">
+
+        <div class="resto-texts box-padding">
+
+            <h2 class="element-gap">drink</h2>
+            <p class="element-gap"> Animi ratione hic mollitia sint quae qui laudantium, perferendis aspernatur vero officia officiis quasi itaque cupiditate maiores debitis iste commodi adipisci impedit deleniti est enim reiciendis nisi. </p>
+            <div class="btn element-gap"><a href="#">see more</a></div>
+
+        </div>
+
+        <div class="glider-contain">
+
+            
+            <div class="glider-images">
+    
+                <button aria-label="Previous" class="glider-prev prev-drink" ><i class="fas fa-arrow-circle-left"></i></button>
+                
+                <div class="glider-drinks">
+                  <div><img src="images/drink-1.jpg"></div>
+                  <div><img src="images/drink-2.jpg"></div>
+                  <div><img src="images/drink-3.jpg"></div>
+                  <div><img src="images/drink-4.jpg"></div>
+                  <div><img src="images/drink-5.jpg"></div>
+                  
+                </div>
+                <button aria-label="Next" class="glider-next next-drink"><i class="fas fa-arrow-circle-right"></i></button>
+            </div>
+            <div role="tablist" id="dots-2" class="dots"></div>
+    
+    
+        </div>
+          
+    </div>
+
+
+
+
+    <h3 id="events" class="events-heading">Explicabo provident recusandae reiciendis neque corporis sit iusto illo pariatur maiores non iste iure, assumenda ipsa fuga doloribus.</h3>
+
+        <div class="main-container">
+
+            <div class="functions-wrapper">
+                <div class="meetings preview"></div>
+                <h2 class="element-gap">Meetings</h2>
+                <p class="element-gap">Praesentium ex soluta voluptates quibusdam suscipit distinctio nobis quidem illo qui facere aliquam eveniet.</p>
+                <div class="btn element-gap"><a href="#">Learn More</a></div>
+            </div>
+
+
+            <div class="functions-wrapper">
+                <div class="weddings preview "></div>
+                    <h2 class="element-gap">Weddings</h2>
+                    <p class="element-gap">Praesentium ex soluta voluptates quibusdam suscipit distinctio nobis quidem illo qui facere aliquam eveniet.</p>
+                    <div class="btn element-gap "><a href="#">Learn More</a></div>
+            </div>
+
+        </div>
+
+
+
+    
+
+    </main>
+
+    <div class="newsletter-container" id="full-width">
+
+        <details>
+            <summary>
+                <h2>Sign up for special offers and promotions <span class="fas fa-caret-square-down"></span></h2>
+            </summary>
+
+            <form class="newsletter">
+
+
+                <div class="form-item element-gap">
+                    <label for="firstname">First name: </label> 
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+             
+                <div class="form-item element-gap">
+                    <label for="lastname">Last name: </label> 
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+
+                <div class="form-item element-gap">
+                    <label for="email">Email Address: </label> 
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+
+            </form>
+
+        </details>
+
+    </div>
+
+
+    <footer>
+
+    </footer>
+
+
+   
+    
+
+ 
+   <script src="main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+   <script src="glide.js"></script>
+   
+
+</body>
+</html>

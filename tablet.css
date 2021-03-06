@@ -1,0 +1,97 @@
+@media screen and (min-width: 768px) 
+
+{
+
+
+ 
+  .main-container {
+    width: 100%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+   
+    
+ 
+}
+
+
+
+
+
+
+  /****************ABOUT*****************/
+
+   
+  .about-heading {
+    text-transform: var(--texttrfm-cap);
+    font-size: var(--fsz-title-lg);
+   
+}
+
+
+.about-grid-container {
+    font-size: var(--fsz-reg-lg); 
+}
+
+.about-items p {
+  padding: 0 var(--sec-padd-sm);
+}
+
+
+
+
+  /****************ROOMS*****************/
+  
+ 
+  .room-slide-images {
+    height: 40vh;
+  }
+
+
+  .room-grid-texts {
+    padding: var(--sec-padd-sm);
+}
+
+
+  .bed-list-type li {
+    font-size: var(--fsz-reg-lg);
+  }
+
+
+
+/*****RESTAURANT****/
+
+
+.resto-texts { 
+  padding: var(--sec-padd-sm); 
+}
+
+
+
+
+
+
+/*****EVENTS*********/
+
+
+.events-heading {
+  width: 70%;
+  margin:0 auto;
+}
+
+
+.functions-wrapper {
+  padding: var(--sec-padd-sm);
+}
+
+
+/*********NEWSLETTER********/
+
+
+form.newsletter,summary{
+   
+  font-size: var(--fsz-reg-lg);
+
+}
+
+
+}

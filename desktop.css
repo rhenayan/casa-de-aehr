@@ -1,0 +1,164 @@
+@media screen and (min-width: 1024px) 
+
+{
+   
+  
+    .element-gap {
+        margin-bottom: var(--margin-btm-lg);
+    }
+    
+
+    /** HIDE MOBILE MENU WHILE ON DESKTOP VIEW **/
+
+    .mobile-menu {
+        display:none;
+    }
+
+
+  
+
+    /** DISPLAY DESKTOP MENU **/
+
+    nav {
+        position:fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+    
+    }
+
+    .desktop-menu {
+        display:block;
+        width:100vw;
+        padding: .5rem 0;
+    
+    
+  
+           
+    }
+
+
+    nav.sticky-nav {
+       
+    
+        background: var(--dark-bg);
+        transition:var(--transition);
+    }
+
+    nav.sticky-nav li:hover {
+        background: var(--color-title);
+    }
+
+    .desktop-list {
+        display:flex;
+        justify-content: center;
+
+       
+    }
+
+
+    .desktop-list li {
+        margin-right: 2rem;
+        padding: .2rem .8rem;
+        transition: var(--transition);
+    }
+
+    .desktop-list li:hover {
+        background: var(--dark-bg);
+        border-radius:var(--bradius);
+        
+    }
+
+    .desktop-list li a {
+        font-size: 1rem;
+        color: var(--color-light);
+    }
+
+    .desktop-list li:hover a {
+        color:var(--color-light);
+        transition:var(--transition);
+    }
+
+
+
+
+
+      /****** BANNER******/
+
+  .header-contents h1 {
+    --fsz-title-lg: 4rem;
+    font-size: var(--fsz-title-lg);
+}
+
+.header-contents h4 {
+    --fsz-reg-lg: 2.5rem;
+    font-size: var(--fsz-reg-lg);
+}
+
+
+/*************MAIN**************/
+
+    main {
+        font-size: var(--fsz-reg-lg);
+        row-gap: var(--row-gap-lg);
+    }
+
+
+   .about-items,
+   .room-grid-texts p,
+   .resto-texts p {
+       font-size: var(--fsz-reg-lg);
+   }
+
+
+   .about-items img {
+      
+       height: var(--img-height-lg);
+       display:block;
+       margin: 0 auto;
+   }
+
+
+    /****************ROOMS*****************/
+ 
+    .room-heading h4 {
+        font-size: var(--fsz-title-lg);
+    }
+
+    .room-slide-images{
+        width: 90%;
+        height: var(--img-height-lg);
+    }
+
+    
+    .bed-list-type li {
+        font-size: 2rem;
+      }
+    
+
+
+    /*****RESTAURANT****/
+
+    .resto-texts h2 { 
+        font-size:var(--fsz-title-lg); 
+      }
+
+      .resto-texts p {
+        padding: 0 2rem;
+      }
+      
+
+    /*****EVENTS*********/
+
+
+
+    .preview {
+    height: 400px;
+    }
+
+
+    .functions-wrapper h2 {
+        font-size: var(--fsz-title-lg);
+    }
+
+}
