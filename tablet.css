@@ -15,9 +15,6 @@
 
 
 
-
-
-
   /****************ABOUT*****************/
 
    
@@ -94,4 +91,119 @@ form.newsletter,summary{
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+/******************SECOND PAGE*******************************/
+
+
+
+.room-banner {
+  padding:10rem var(--sec-padd-lg) var(--sec-padd-lg);
+}
+
+
+.room-banner h4 {
+  font-size: var(--fsz-reg-lg);
+}
+
+.room-banner h1 {
+  font-size: var(--fsz-title-lg);
+}
+
+
+
+/********SERVICES***********/
+
+.sec-title {
+  font-size: var(--fsz-title-lg);
+}
+.services-intro {
+  font-size: var(--fsz-reg-lg);
+}
+
+
+
+
+/********INTERIOR***********/
+
+
+.interior-gallery {
+    display:grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: repeat(5, 20rem);
+   width: 90%;
+   margin: 0 auto;
+  
+    
+  }
+
+.image {
+  height: auto;
+  padding: .5rem;
+  
+  
+}
+
+.jaz {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3 ;
+}
+
+
+.shower {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+   
+  
+}
+
+.cr {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  
+}
+
+.tv {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+
+}
+
+.table {
+  grid-column: 1/2;
+  grid-row: 3 / 4;
+}
+
+.aircon {
+  grid-column: 1/2 ;
+  grid-row: 4 / 5;
+
+}
+
+.pillows {
+  grid-column: 1/4 ;
+  grid-row: 5 / 6;
+
+}
+
+.towels {
+
+  grid-column: 1/2;
+  grid-row:5 /6;
+
+}
+
+.toothbrush {
+  grid-column: 2 / 4 ;
+  grid-row:5 /6;
+
+}
+
+
+
+
+
+>>>>>>> b79f625 (second commit with new file and assets)
 }
