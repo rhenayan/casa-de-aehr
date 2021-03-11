@@ -27,12 +27,20 @@ window.addEventListener("scroll", stickyNav);
 
 function stickyNav() {
   let navMenu = document.querySelector('nav');
-  navMenu.classList.toggle('sticky-nav', window.scrollY > 0);
+  navMenu.classList.toggle('main-sticky', window.scrollY > 0);
+
 };
 
+
+
+// sticky navbar after scroll page 3
+
+
+
+
+
+
 // change image //
-
-
 
 let changeImg = document.querySelector('.room-slide-images img');
 let singleRoom = document.querySelector('.single');
@@ -45,6 +53,7 @@ function single(){
   changeImg.src="images/single-bed.jpg";
   
   
+  
  
 };
 
@@ -53,7 +62,7 @@ doubleRoom.addEventListener('click', double);
 
 function double(){
   changeImg.src="images/double-bed.jpg";
- 
+  
 
  
 };
@@ -71,3 +80,4 @@ function superior(){
 
 
 
+// tab

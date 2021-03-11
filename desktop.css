@@ -38,14 +38,13 @@
     }
 
 
-    nav.sticky-nav {
+    nav.main-sticky {
        
-    
         background: var(--dark-bg);
         transition:var(--transition);
     }
 
-    nav.sticky-nav li:hover {
+    nav.main-sticky li:hover {
         background: var(--color-title);
     }
 
@@ -70,8 +69,9 @@
     }
 
     .desktop-list li a {
-        font-size: 1rem;
-        color: var(--color-light);
+        font-size: 1.3rem;
+        color: var(--light-bg);
+
     }
 
     .desktop-list li:hover a {
@@ -80,8 +80,9 @@
     }
 
 
+    /***NAV BAR FOR THIRD PAGE****/
 
-
+ 
 
       /****** BANNER******/
 
