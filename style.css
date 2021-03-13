@@ -860,7 +860,7 @@ details[open] summary ~ * {
 .tab-menu,
 .restaurant-grid-gallery,
 .chef-container {
-    margin: 5rem auto 0;
+    margin: 15rem auto 0;
 }
 
 /****** intro ********/
@@ -1313,11 +1313,14 @@ footer.resto {
 
 /***animate on sroll**/
 
-.text-aos {
+.slideup-aos{
     transform: translateY(50px);
     opacity: 0;
     transition: all .7s cubic-bezier(.47,0,.74,.71); 
 }
+
+
+
 
 .show-aos {
     transform: translateY(0px);
@@ -1328,8 +1331,6 @@ footer.resto {
     transform:scale(.5);
     opacity: 0;
     transition: all .6s cubic-bezier(.47,0,.74,.71); 
-
-    
     
 }
 
@@ -1340,6 +1341,14 @@ footer.resto {
   
 }
 
+
+.glider-contain .zoomIn-img-aos img {
+    animation:none;
+}
+
+.interior-gallery .zoomIn-img-aos img {
+    animation:none;
+}
 
 
 /*start the image animation after the element is viewed*/
@@ -1382,3 +1391,29 @@ footer.resto {
   }
 
 
+
+  .img-aos-slide {
+      margin-left: -1000px;
+      opacity: 0;
+      transition: 2.3s cubic-bezier(.47,0,.74,.71); 
+   
+     
+  }
+
+
+
+  .img-aos-slide-left {
+    margin-left: 0px;
+    opacity: 1;
+}
+
+
+.fadein-aos {
+    opacity: 0;
+    transition: all .6s cubic-bezier(.47,0,.74,.71);
+}
+  
+
+.fade-in{
+    opacity: 1;
+}
