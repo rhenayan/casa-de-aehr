@@ -79,5 +79,44 @@ function superior(){
 
 
 
+//animate on scroll
 
-// tab
+window.addEventListener('scroll', showOnscrollText)
+
+function showOnscrollText(){
+  let text=Array.from(document.querySelectorAll('.text-aos'));
+  
+  text.forEach(element => {
+    if(element.getBoundingClientRect().top < window.innerHeight){
+      element.classList.add('show-aos');
+    } else {
+      element.classList.remove('show-aos');
+    }
+  });
+
+
+};
+
+
+//image zoom-in
+
+window.addEventListener('scroll', showOnscrollImg)
+
+function showOnscrollImg(){
+  let img=Array.from(document.querySelectorAll('.img-aos-zoomIn'));
+
+  img.forEach(element => {
+    if(element.getBoundingClientRect().top < window.innerHeight){
+      element.classList.add('zoomIn-img-aos');
+    } else {
+      element.classList.remove('zoomIn-img-aos');
+    }
+  });
+}
+
+
+
+
+
+//image sline-in 
+
