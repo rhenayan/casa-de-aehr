@@ -29,144 +29,156 @@
 
 <body>
 
-
-    <nav class="nav-resto">
+<header class="page__header header__room">
+    <nav class="nav nav__desktop">
                 
-        <div class="mobile-menu">
-            <div class="toggle">
-                <span class="fas fa-bars icon"></span><span>Menu</span>
+        <div class="menu__mobile menu__mobile_hidden">
+            <div class="menu__toggle">
+                <span class="fas fa-bars icon menu__icon"></span><span>Menu</span>
             </div>
 
-            <ul class="menu-list">
-                <li><a class="select"  href="index.html">Home</a></li>
-                <li><a class="select"  href="index.html">About</a></li>
-                <li><a class="select"  href="index.html#rooms">Rooms</a></li>
-                <li><a class="select"  href="bar&resto.html">Bar & Restaurant</a></li>
-                <li><a class="select"  href="index.html#events">Events</a></li>
-                <li><a class="select"  href="#contact">Contact</a></li>
-            </ul>
+            <div class="menu__list_mobile menu__list_hidden">
+                <li class="menu__item_mobile"><a class="menu__link"  href="#">Home</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="#about">About</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="#rooms">Rooms</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="#resto">Bar & Restaurant</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="#events">Events</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="#contact">Contact</a></li>
+            </div>
 
         </div>
 
             
 
-        <div class="desktop-menu">
-            <ul class="desktop-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html#rooms">Rooms</a></li>
-                <li><a href="bar&resto.html">Bar & Restaurant</a></li>
-                <li><a href="index.html#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+        <div class="menu__desktop menu__desktop_hidden">
+            <ul class="menu__list_desktop">
+                <li class="menu__item_desktop"><a class="menu__link"  href="index.html">Home</a></li>
+                <li class="menu__item_desktop"><a class="menu__link"  href="index.html#about">About</a></li>
+                <li class="menu__item_desktop"><a class="menu__link"  href="index.html#rooms">Rooms</a></li>
+                <li class="menu__item_desktop"><a class="menu__link"  href="bar&resto.html">Bar & Restaurant</a></li>
+                <li class="menu__item_desktop"><a class="menu__link"  href="index.html#events">Events</a></li>
+                <li class="menu__item_desktop"><a class="menu__link"  href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
 
-<header class="room-page">
-    <div class="room-banner">
+
+    <div class="header__room-heading">
         <h4>explore</h4>
-        <h1>room interior <br> & services</h1>
+        <h1 class="header__room-title">room interior <br> & services</h1>
     </div>
 </header>
 
 
-<h1 class="sec-title">Services</h1>
+<main class="main__container">
 
 
-<div class="services-container">
+<h1 class="section__heading ">Services</h1>
 
-    <div class="services-intro">
+
+
+<div class="section__container feature">
+
+    <div class="feature__intro feature__intro-height ">
 
         <p class="slideup-aos"> Voluptate modi, corrupti explicabo consequatur, voluptatem eum ab voluptatum consectetur deserunt assumenda, autem dolore qui quos aut error.</p>
 
     </div>
 
-    <div class="services-list">
-
-        <div class="service-card slideup-aos">
-            <div class="card-icon"><img src="icons/linens.png" alt="icon"></div>
-            <div class="card-description">Italian Frette Linens</div>
-        </div>
-
-        <div class="service-card slideup-aos">
-            <div class="card-icon"><img src="icons/room-service.png" alt="icon"></div>
-            <div class="card-description">European Breakfast</div>
-        </div>
-
-        <div class="service-card slideup-aos">
-            <div class="card-icon"><img src="icons/drinks.png" alt="icon"></div>
-            <div class="card-description">Afternoon Drinks</div>
-        </div>
-
+    <div class="list__features feature__intro-height">
+            
+            <div class="feature__item-wrapper slideup-aos">
         
-        <div class="service-card slideup-aos">
-            <div class="card-icon"><img src="icons/safety-box.png" alt="icon"></div>
-            <div class="card-description">Safety Deposit Box</div>
-        </div>
-
-
-        <div class="service-card slideup-aos">
-            <div class="card-icon"><img src="icons/treadmill.png" alt="icon"></div>
-            <div class="card-description">Use of Treadmill </div>
-        </div>
-
-        <div class="service-card slideup-aos">
-            <div class="card-icon"><img src="icons/pet.png" alt="icon"></div>
-            <div class="card-description">Pets are Allowed </div>
-        </div>
-
+            <div class="feature__icon-wrapper"><img src="icons/linens.png" alt="icon"></div>
+             <h5 class="feature_name">Italian Frette <br> Linens</h5>
+         </div>
+ 
+         <div class="feature__item-wrapper slideup-aos">
+             
+             <div class="feature__icon-wrapper"><img  src="icons/room-service.png" alt="icon"></div>
+             <h5 class="feature_name">European <br>Breakfast</h5>
+         </div>
+ 
+         <div class="feature__item-wrapper slideup-aos">
+             <div class="feature__icon-wrapper"><img  src="icons/drinks.png" alt="icon"></div>
+             <h5 class="feature_name">Afternoon <br> Drinks</h5>
+         </div>
+ 
+         
+         <div class="feature__item-wrapper slideup-aos">
+             <div class="feature__icon-wrapper"><img  src="icons/safety-box.png" alt="icon"></div>
+             <h5 class="feature_name">Safety Deposit <br> Box</h5>
+         </div>
+ 
+ 
+         <div class="feature__item-wrapper slideup-aos">
+             <div class="feature__icon-wrapper"><img src="icons/treadmill.png" alt="icon"></div>
+             <h5 class="feature_name">Treadmill <br> Use</h5>
+         </div>
+ 
+         <div class="feature__item-wrapper slideup-aos">
+             <div class="feature__icon-wrapper"><img src="icons/pet.png" alt="icon"></div>
+             <h5 class="feature_name">Pets </h5>
+         </div>
+        
+       
     </div>
    
-
+   
 </div>
 
 
-<h1 class="sec-title interior slideup-aos">Interior</h1>
-<div class="interior-gallery">
+<h1 class="section__heading slideup-aos">Interior</h1>
+<div class="grid-container__gallery">
 
    
-    <div class="image shower img-aos-zoomIn"><img src="images/bathroom-2.jpg" alt="bathroom"></div>
-    <div class="image jaz img-aos-zoomIn"><img src="images/bathroom-1.jpg" alt="bathroom"></div>
-    <div class="image cr img-aos-zoomIn"><img src="images/bathroom-3.jpg" alt="bathroom"></div>
+    <div class="grid-gallery__image shower img-aos-zoomIn"><img src="images/bathroom-2.jpg" alt="bathroom"></div>
+    <div class="grid-gallery__image jaz img-aos-zoomIn"><img src="images/bathroom-1.jpg" alt="bathroom"></div>
+    <div class="grid-gallery__image cr img-aos-zoomIn"><img src="images/bathroom-3.jpg" alt="bathroom"></div>
    
-    <div class="image tv img-aos-zoomIn"><img src="images/tv.jpg" alt="bathroom"></div>
-    <div class="image table img-aos-zoomIn"><img src="images/sofa.jpg" alt="bathroom"></div>
-    <div class="image aircon img-aos-zoomIn"><img src="images/chair.jpg" alt="bathroom"></div>
+    <div class="grid-gallery__image tv img-aos-zoomIn"><img src="images/tv.jpg" alt="bathroom"></div>
+    <div class="grid-gallery__image table img-aos-zoomIn"><img src="images/sofa.jpg" alt="bathroom"></div>
+    <div class="grid-gallery__image aircon img-aos-zoomIn"><img src="images/chair.jpg" alt="bathroom"></div>
  
-    <div class="image towels img-aos-zoomIn"><img src="images/towels.jpg" alt="towels"></div>
-    <div class="image toothbrush img-aos-zoomIn"><img src="images/toothbrush.jpg" alt="toothbrush"></div>
+    <div class="grid-gallery__image towels img-aos-zoomIn"><img src="images/towels.jpg" alt="towels"></div>
+    <div class="grid-gallery__image toothbrush img-aos-zoomIn"><img src="images/toothbrush.jpg" alt="toothbrush"></div>
   
 
 </div>
 
 
-<footer id="contact" class="resto">
-    <div class="footer">
-        <h2>follow us</h2>
-        <div class="socmed">
-            <span class="fab fa-facebook"></span>
-            <span class="fab fa-instagram"></span>
-            <span class="fab fa-youtube"></span>
-        </div>
+</main>
 
-        <div class="support-links">
-            <span>Info</span>
-            <span>Support</span>
-            <span>Marketing</span>
-        </div>
-
-        <div class="privacy-links">
-            <span>Terms of Use</span>
-            <span>Privacy Policy</span>
-        </div>
-            
-
-        <div class="copyright">
-            <span class="far fa-copyright"></span><span>2021</span>
-        </div>
+<footer id="contact" class="section__container footer">
+           
+    <h2 class="footer__title">follow us</h2>
+    <div>
+        <span class="fab fa-facebook footer__icon"></span>
+        <span class="fab fa-instagram footer__icon"></span>
+        <span class="fab fa-youtube footer__icon"></span>
     </div>
+
+    <div>
+        <span>Info</span>
+        <span>Support</span>
+        <span>Marketing</span>
+    </div>
+
+    <div>
+        <span>Terms of Use</span>
+        <span>Privacy Policy</span>
+    </div>
+        
+
+    <div>
+        <span class="far fa-copyright footer__copyright "></span><span>2021</span>
+    </div>
+
 </footer>
+
+
 
 
 

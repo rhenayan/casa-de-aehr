@@ -4,8 +4,8 @@
 // toggle mobile menu//
 
 
-const menuToggle = document.querySelector('.toggle');
-const menuList = document.querySelector('.menu-list');
+const menuToggle = document.querySelector('.menu__toggle');
+const menuList = document.querySelector('.menu__list_mobile');
 
 
 menuToggle.addEventListener('click', toggleMenu );
@@ -45,19 +45,16 @@ function stickyNav() {
 
 // change image //
 
-let changeImg = document.querySelector('.room-slide-images img');
-let singleRoom = document.querySelector('.single');
-let doubleRoom = document.querySelector('.double');
-let superiorRoom = document.querySelector('.superior');
+let changeImg = document.querySelector('.js_room-image');
+let singleRoom = document.querySelector('.item_single');
+let doubleRoom = document.querySelector('.item_double');
+let superiorRoom = document.querySelector('.item_superior');
 
 singleRoom.addEventListener('click', single);
 
 function single(){
   changeImg.src="images/single-bed.jpg";
-  
-  
-  
- 
+
 };
 
 

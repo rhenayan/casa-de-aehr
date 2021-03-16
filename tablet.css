@@ -2,97 +2,76 @@
 
 {
 
-
  
-  .main-container {
-    width: 100%;
-    display:grid;
+
+
+  .section__grid-container {
     grid-template-columns: 50% 50%;
-   
+    grid-template-rows: 500px 500px;
+    place-items: center;
+    row-gap: 3rem;
+    color:var(--color-primary);
+
+
+  }
+ 
+
+  .section__grid-item {
+    margin-top: 0;
     
+  }
+
+  .grid-item__picture{
+    max-height: 400px;
+  }
+
+
+
+  .section__container{
+    flex-direction:row;
+  }
+
+  .section__inner {
+    width: 50%;
+  }
+
+
+  .section__text {
+    padding: 0 3rem;
+  }
+
+  .section__picture img {
+    max-height: 600px;
+  }
  
-}
 
+  .glider-contain {
+    width: 50% !important;
+    
+  }
 
-
-  /****************ABOUT*****************/
-
-   
-  .about-heading {
-    text-transform: var(--texttrfm-cap);
-    font-size: var(--fsz-title-lg);
-   
-}
-
-
-.about-grid-container {
-    font-size: var(--fsz-reg-lg); 
-}
-
-.about-items p {
-  padding: 0 var(--sec-padd-sm);
-}
-
-
-
-
-  /****************ROOMS*****************/
   
- 
-  .room-slide-images {
-    height: 40vh;
-  }
-
-
-  .room-grid-texts {
-    padding: var(--sec-padd-sm);
-}
-
-
-  .bed-list-type li {
-    font-size: var(--fsz-reg-lg);
-  }
-
-
-
-/*****RESTAURANT****/
-
-
-.resto-texts { 
-  padding: var(--sec-padd-sm); 
-}
-
-
-
-
-
-
-/*****EVENTS*********/
-
-
-.events-heading {
-  width: 70%;
-  margin:0 auto;
-  font-size: var(--fsz-reg-lg);
-}
-
-
-.functions-wrapper {
-  padding: var(--sec-padd-sm);
-}
-
-.functions-wrapper h2 {
-  font-size: var(--fsz-title-lg);
-}
-
-/*********NEWSLETTER********/
-
-
-form.newsletter,summary{
+  .newsletter__form {
+    max-width: 800px;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
    
-  font-size: var(--fsz-reg-lg);
+  }
 
-}
+
+ 
+  .newsletter__input {
+    width: 200px;
+    margin-right: 2rem;
+  }
+
+
+  .newsletter__label {
+    
+    margin-right: 2rem;
+  }
 
 
 
@@ -101,47 +80,31 @@ form.newsletter,summary{
 
 
 
-.room-banner {
-  padding:10rem var(--sec-padd-lg) var(--sec-padd-lg);
-}
-
-
-.room-banner h4 {
-  font-size: var(--fsz-reg-lg);
-}
-
-.room-banner h1 {
-  font-size: var(--fsz-title-lg);
-}
-
 
 
 /********SERVICES***********/
 
-.sec-title {
-  font-size: var(--fsz-title-lg);
+.feature > * {
+  width: 50%;
 }
-.services-intro {
-  font-size: var(--fsz-reg-lg);
-}
-
 
 
 
 /********INTERIOR***********/
 
 
-.interior-gallery {
+.grid-container__gallery {
     display:grid;
     grid-template-columns: 50% 25% 25%;
-    grid-template-rows: repeat(5, 20rem);
-   width: 90%;
-   margin: 0 auto;
+    grid-template-rows: repeat(5, 30rem);
+    gap: 1px;
+    width: 90%;
+    margin: 5rem auto;
   
     
   }
 
-.image {
+.grid-gallery__image {
   height: auto;
   padding: .5rem;
   
@@ -208,21 +171,19 @@ form.newsletter,summary{
 
 /****** intro ********/
 
-.resto-intro h1 {
-  font-size: var(--fsz-title-lg);
-  padding: 10rem 5rem;
-  line-height: initial;
 
+.header__restro-heading {
+  padding: 10rem 5rem;
+  font-size: var(--font-size-title);
 }
 
 
-
-
+.heading__link {
+  font-size: 3rem;
+}
 /**************CULINARY *********/
 
- .restaurant-grid-gallery {
-
-   
+ .grid-container__restaurant { 
    display:grid;
    gap: .5rem;
    grid-template-columns: repeat(6, 1fr);
@@ -232,41 +193,42 @@ form.newsletter,summary{
   
  }
 
+ .restaurant__text {
+      font-size: 1.5rem;
+      padding: 0 1rem;
+
+}
+
+.text_hours {
+  grid-column:3 / 5;
+  grid-row: 1 /3;
+ 
+}
+
+.text_quote {
+  grid-column: span 2;
+}
 
 
- .restaurant-grid-gallery .image {
+
+ .restaurant__image  {
    width: 100%;
    height: 100%;
    object-fit: cover;
    display:block;
    margin: 0;
- }
 
-
- .opening-hours {
-   grid-column:3 / 5;
-   grid-row: 1 /3;
-  
- }
-
- .quote {
    grid-column: span 2;
  }
 
-.restaurant-grid-gallery .image {
-  grid-column: span 2;
-}
-
-.restaurant-grid-gallery .image:nth-child(1),
-.restaurant-grid-gallery .image:nth-child(3)
+.restaurant__image:nth-child(1),
+.restaurant__image:nth-child(3)
  {
   grid-row: span 2;
 }
 
-.opening-hours,
-.quote {
-      padding: 0 1.5rem;
-  }
+
+
 
 
 
@@ -277,8 +239,8 @@ form.newsletter,summary{
   /****TAB BODY CONTENTS*******/
 
  
-  .tab-menu,
-  .drinks-container {
+  .tab__menu
+ {
     height:700px;
   }
 
@@ -288,34 +250,16 @@ form.newsletter,summary{
 /****THE CHEF*******/
 
 
-.flex {
-  display:flex;
-  flex-direction:row;
+.float__image-wrapper {
+  float:left;
 }
-
-
-
-.chef-about h2 {
-  font-size: var(--fsz-title-lg);
-}
-
-.chef-about p {
-  font-size: var(--fsz-reg-lg);
-}
-
-.chef-about > * {
-    padding: var(--sec-padd-sm) var(--sec-padd-lg);
-}
-
 
 
 /**********FOOOTER***********/
 
-.footer h2 {
-  font-size: var(--fsz-title-lg);
+.footer {
+  flex-direction:column;
 }
-
-
 
 /**footer room page**/
 

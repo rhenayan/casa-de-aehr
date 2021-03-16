@@ -7,7 +7,7 @@ function showOnscrollText(){
   let text=Array.from(document.querySelectorAll('.slideup-aos'));
   
   text.forEach(element => {
-    if(element.getBoundingClientRect().top < window.innerHeight / 2){
+    if(element.getBoundingClientRect().top < window.innerHeight / 1.2){
       element.classList.add('show-aos');
     } else {
       element.classList.remove('show-aos');
@@ -26,7 +26,7 @@ function showOnscrollImg(){
   let img=Array.from(document.querySelectorAll('.img-aos-zoomIn'));
 
   img.forEach(element => {
-    if(element.getBoundingClientRect().top < window.innerHeight / 2){
+    if(element.getBoundingClientRect().top < window.innerHeight / 1.2){
       element.classList.add('zoomIn-img-aos');
     } else {
       element.classList.remove('zoomIn-img-aos');
@@ -62,7 +62,7 @@ function showBtn(){
   let btn=Array.from(document.querySelectorAll('.fadein-aos'));
 
   btn.forEach(element => {
-    if(element.getBoundingClientRect().top < window.innerHeight / 2) {
+    if(element.getBoundingClientRect().top < window.innerHeight) {
       element.classList.add('fade-in');
     } else {
       element.classList.remove('fade-in');

@@ -2,83 +2,58 @@
 
 {
    
-  
-    .element-gap {
-        margin-bottom: var(--margin-btm-lg);
+    html {
+        font-size: 12px;
     }
-    
-
+  
+   
     /** HIDE MOBILE MENU WHILE ON DESKTOP VIEW **/
 
-    .mobile-menu {
+    .menu__mobile_hidden{
         display:none;
     }
-
-
-  
-
     /** DISPLAY DESKTOP MENU **/
 
-    nav {
+    .nav__desktop {
         position:fixed;
         top:0;
         left: 0;
         width: 100%;
+        
     
     }
 
-    .desktop-menu {
+    .menu__desktop {
         display:block;
-        width:100vw;
-        padding: .5rem 0;
-    
-    
-  
-           
+        padding: 1rem .5rem;
+
+
     }
 
-
-    nav.main-sticky {
-       
-        background: var(--dark-bg);
-        transition:var(--transition);
-    }
-
-    nav.main-sticky li:hover {
-        background: var(--color-title);
-    }
-
-    .desktop-list {
+    .menu__list_desktop {
         display:flex;
         justify-content: center;
+  
+    }
 
+    .menu__item_desktop {
+        margin: 0 2rem;
+    }
+
+   .menu__link {
+       padding: 0 1rem;
+    }
+
+   .nav__desktop.main-sticky {
        
+        background: var(--bg-primary);
+        transition: background .5s ease-in-out;
+      
+      
     }
 
-
-    .desktop-list li {
-        margin-right: 2rem;
-        padding: .2rem .8rem;
-        transition: var(--transition);
-    }
-
-    .desktop-list li:hover {
-        background: var(--dark-bg);
-        border-radius:var(--bradius);
-        
-    }
-
-    .desktop-list li a {
-        font-size: 1.3rem;
-        color: var(--light-bg);
-
-    }
-
-    .desktop-list li:hover a {
-        color:var(--color-light);
-        transition:var(--transition);
-    }
-
+ 
+   
 
     /***NAV BAR FOR THIRD PAGE****/
 
@@ -97,74 +72,7 @@
 }
 
 
-/*************MAIN**************/
-
-    main {
-        font-size: var(--fsz-reg-lg);
-        row-gap: var(--row-gap-lg);
-    }
-
-
-   .about-items,
-   .room-grid-texts p,
-   .resto-texts p {
-       font-size: var(--fsz-reg-lg);
-   }
-
-
-   .about-items img {
-      
-       height: var(--img-height-lg);
-       display:block;
-       margin: 0 auto;
-   }
-
-
-    /****************ROOMS*****************/
- 
-    .room-heading h4 {
-        font-size: var(--fsz-title-lg);
-    }
-
-    .room-slide-images{
-        width: 90%;
-        height: var(--img-height-lg);
-    }
-
-    
-    .bed-list-type li {
-        font-size: 2rem;
-      }
-    
-
-
-    /*****RESTAURANT****/
-
-    .resto-texts h2 { 
-        font-size:var(--fsz-title-lg); 
-      }
-
-      .resto-texts p {
-        padding: 0 2rem;
-      }
-      
-
-    /*****EVENTS*********/
-
-
-
-    .preview {
-    height: 400px;
-    }
-
-
-    .functions-wrapper h2 {
-        font-size: var(--fsz-title-lg);
-    }
-
-
-    
-    /********INTERIOR***********/
+   
 
     
 }

@@ -34,98 +34,104 @@
 <body>
 
 
-    <nav class="nav-resto">
-                
-        <div class="mobile-menu">
-            <div class="toggle">
-                <span class="fas fa-bars icon"></span><span>Menu</span>
-            </div>
-
-            <ul class="menu-list">
-                <li><a class="select"  href="index.html">Home</a></li>
-                <li><a class="select"  href="index.html">About</a></li>
-                <li><a class="select"  href="index.html#rooms">Rooms</a></li>
-                <li><a class="select"  href="index.html#events">Events</a></li>
-                <li><a class="select"  href="#contact">Contact</a></li>
-            </ul>
-
-        </div>
-
-            
-
-        <div class="desktop-menu">
-            <ul class="desktop-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html#rooms">Rooms</a></li>
-                <li><a href="index.html#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-
-    <div class="resto-intro">
-        <h1>
-            Discover at De Aehr our <a class="inline-link" href="#culinary">culinary </a>diversity. Get to know the <a class="inline-link" href="#chef">person</a> behind the scene and fall in love with the <a class="inline-link" href="#place">place</a>. 
-        </h1>
-    </div>
+    <header class="page__header header__restaurant">
+        <nav class="nav nav__desktop">
+                    
+            <div class="menu__mobile menu__mobile_hidden">
+                <div class="menu__toggle">
+                    <span class="fas fa-bars icon menu__icon"></span><span>Menu</span>
+                </div>
     
-  
+                <div class="menu__list_mobile menu__list_hidden">
+                    <li class="menu__item_mobile"><a class="menu__link"  href="#">Home</a></li>
+                    <li class="menu__item_mobile"><a class="menu__link"  href="#about">About</a></li>
+                    <li class="menu__item_mobile"><a class="menu__link"  href="#rooms">Rooms</a></li>
+                    <li class="menu__item_mobile"><a class="menu__link"  href="#resto">Bar & Restaurant</a></li>
+                    <li class="menu__item_mobile"><a class="menu__link"  href="#events">Events</a></li>
+                    <li class="menu__item_mobile"><a class="menu__link"  href="#contact">Contact</a></li>
+                </div>
+    
+            </div>
+    
+                
+    
+    
+            <div class="menu__desktop menu__desktop_hidden">
+                <ul class="menu__list_desktop">
+                    <li class="menu__item_desktop"><a class="menu__link"  href="index.html">Home</a></li>
+                    <li class="menu__item_desktop"><a class="menu__link"  href="index.html#about">About</a></li>
+                    <li class="menu__item_desktop"><a class="menu__link"  href="index.html#rooms">Rooms</a></li>
+                    <li class="menu__item_desktop"><a class="menu__link"  href="bar&resto.html">Bar & Restaurant</a></li>
+                    <li class="menu__item_desktop"><a class="menu__link"  href="index.html#events">Events</a></li>
+                    <li class="menu__item_desktop"><a class="menu__link"  href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+    
+    
+        
+        <h1 class="header__restro-heading">
+                Discover at De Aehr our <a class="heading__link" href="#culinary">culinary </a>diversity. Get to know the <a class="heading__link" href="#chef">person</a> behind the scene and fall in love with the <a class="heading__link" href="#place">place</a>
+        </h1>
+       
 
-    <div class="restaurant-grid-gallery">
-        <img class="image img-aos-zoomIn" src="images/culinary.jpg" alt="culinary">
-        <img class="image img-aos-zoomIn" src="images/culinary-2.jpg" alt="culinary">
-        <img class="image img-aos-zoomIn" src="images/culinary-3.jpg" alt="culinary">
-        <div class="opening-hours">
+
+    </header>
+
+
+
+    <div id="place" class="grid-container__restaurant container_gap">
+        <img class="restaurant__image img-aos-zoomIn" src="images/culinary.jpg" alt="culinary">
+        <img class="restaurant__image img-aos-zoomIn" src="images/culinary-2.jpg" alt="culinary">
+        <img class="restaurant__image img-aos-zoomIn" src="images/culinary-3.jpg" alt="culinary">
+        <div class="restaurant__text text_hours">
             <h2>Opening Hours</h2>
             <p>Wednesday to Saturday <br>
             kitchen acceptance from <b>6:30 p.m to 8:30 p.m.</b> <br><br>
             After a visit to our restaurant, we recommend a visit to the Bar.</p>
         </div>
-        <p class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, sint harum ea labore enim velit.</p>
-        <img class="image img-aos-zoomIn" src="images/culinary-4.jpg" alt="culinary">
+        <p class="restaurant__text text_quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, sint harum ea labore enim velit.</p>
+        <img class="restaurant__image img-aos-zoomIn" src="images/culinary-4.jpg" alt="culinary">
            
-    </div>
+    </div> 
 
 
 
-
-    <div id="culinary" class="tab-menu">
+    <div id="culinary" class="tab__menu">
 
 
         <input type="radio" id="tab-cuisine" name="tab" checked="checked">
-        <label for="tab-cuisine">Cuisine</label>
+        <label class="tab__nav" for="tab-cuisine">Cuisine</label>
 
     
-        <div class="tab-body">
-            <div class="tab-contents">
-                <div class="cuisine-container">
-                    <h2>Chinese Cuisine</h2>
-                    <div class="tab-gallery fadein-aos">
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/chinese-1.jpg" alt="chinese cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/chinese-2.jpg" alt="chinese cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/chinese-3.jpg" alt="chinese cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/chinese-4.jpg" alt="chinese cuisine"></div>
+        <div class="tab__body">
+            <div class="body__inner">
+                <div class="menu-gallery__wrapper">
+                    <h2 class="menu-gallery__header">Chinese Cuisine</h2>
+                    <div class="menu-gallery__item fadein-aos">
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/chinese-1.jpg" alt="chinese cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/chinese-2.jpg" alt="chinese cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/chinese-3.jpg" alt="chinese cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/chinese-4.jpg" alt="chinese cuisine"></div>
 
                     </div>
 
-                    <h2>Italian Cuisine</h2>
-                    <div class="tab-gallery fadein-aos">
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/italian-1.jpg" alt="italian cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/italian-2.jpg" alt="italian cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/italian-3.jpg" alt="italian cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/italian-4.jpg" alt="italian cuisine"></div>
+                    <h2 class="menu-gallery__header">Italian Cuisine</h2>
+                    <div class="menu-gallery__item">
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/italian-1.jpg" alt="italian cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/italian-2.jpg" alt="italian cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/italian-3.jpg" alt="italian cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/italian-4.jpg" alt="italian cuisine"></div>
 
                     </div>
 
-                    <h2>Mexican Cuisine</h2>
-                    <div class="tab-gallery fadein-aos">
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/mexican-1.jpg" alt="mexican cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/mexican-2.jpg" alt="mexican cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/mexican-3.jpg" alt="mexican cuisine"></div>
-                        <div class="img-wrapper"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/mexican-4.jpg" alt="mexican cuisine"></div>
+                    <h2 class="menu-gallery__header">Mexican Cuisine</h2>
+                    <div class="menu-gallery__item">
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/mexican-1.jpg" alt="mexican cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/mexican-2.jpg" alt="mexican cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/mexican-3.jpg" alt="mexican cuisine"></div>
+                        <div class="img-wrapper"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/mexican-4.jpg" alt="mexican cuisine"></div>
 
                     </div>
                 </div>
@@ -137,17 +143,17 @@
 
 
         <input type="radio" id="tab-desserts" name="tab">
-        <label for="tab-desserts">Desserts</label>
+        <label class="tab__nav" for="tab-desserts">Desserts</label>
 
-        <div class="tab-body">
-            <div class="tab-contents">
-                <div class="dessert-container">
-                    <div class="tab-gallery">
-                        <div class="img-wrapper fadein-aos"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/dessert-1.jpg" alt="dessert"></div>
-                        <div class="img-wrapper fadein-aos"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/dessert-2.jpg" alt="dessert"></div>
-                        <div class="img-wrapper fadein-aos"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/dessert-3.jpg" alt="dessert"></div>
-                        <div class="img-wrapper fadein-aos"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/dessert-4.jpg" alt="dessert"></div>
-                        <div class="img-wrapper fadein-aos"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/dessert-5.jpg" alt="dessert"></div>
+        <div class="tab__body">
+            <div class="body__inner">
+                <div class="menu-gallery__wrapper">
+                    <div class="menu-gallery__item">
+                        <div class="img-wrapper fadein-aos"><div class="icon__hover><span class="fas fa-expand"></span></div><img src="images/dessert-1.jpg" alt="dessert"></div>
+                        <div class="img-wrapper fadein-aos"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/dessert-2.jpg" alt="dessert"></div>
+                        <div class="img-wrapper fadein-aos"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/dessert-3.jpg" alt="dessert"></div>
+                        <div class="img-wrapper fadein-aos"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/dessert-4.jpg" alt="dessert"></div>
+                        <div class="img-wrapper fadein-aos"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/dessert-5.jpg" alt="dessert"></div>
                     </div>
 
                 </div>
@@ -157,15 +163,15 @@
 
 
         <input type="radio" id="tab-drinks" name="tab">
-        <label for="tab-drinks">Drinks</label>
+        <label class="tab__nav" for="tab-drinks">Drinks</label>
 
-        <div class="tab-body">
-            <div class="tab-contents">
-                <div class="drinks-container">
-                    <div class="tab-gallery">
-                        <div class="img-wrapper fadein-aos"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/juice-1.jpg" alt="drink and beverages"></div>
-                        <div class="img-wrapper fadein-aos"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/juice-2.jpg" alt="drink and beverages"></div>
-                        <div class="img-wrapper fadein-aos"><div class="enlarge-hover"><span class="fas fa-expand"></span></div><img src="images/juice-3.jpg" alt="drink and beverages"></div>
+        <div class="tab__body">
+            <div class="body__inner tab-contents">
+                <div class="menu-gallery__wrapper">
+                    <div class="menu-gallery__item">
+                        <div class="img-wrapper fadein-aos"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/juice-1.jpg" alt="drink and beverages"></div>
+                        <div class="img-wrapper fadein-aos"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/juice-2.jpg" alt="drink and beverages"></div>
+                        <div class="img-wrapper fadein-aos"><div class="icon__hover"><span class="fas fa-expand"></span></div><img src="images/juice-3.jpg" alt="drink and beverages"></div>
                        
                     </div>
 
@@ -177,49 +183,53 @@
     </div>
 
 
-    <div id="chef" class="chef-container">
 
-        <div class="flex">
-            <div class="chef-img">
-                <img src="images/chef.jpg" alt="the chef">
-            </div>
 
-            <div class="chef-about">
-                <h2 class="slideup-aos">the head chef</h2>
-                <p class="slideup-aos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit distinctio eligendi! Autem repellat eaque sed rerum deserunt voluptatibus obcaecati culpa corporis nihil nemo harum, ad dolorum quaerat voluptatem voluptas veniam impedit enim magni doloribus fuga ipsa molestiae mollitia ut. Odio, sunt quisquam illo quaerat optio esse! Sunt, quos quae.</p>
 
-            </div>
-        </div>
+
+    <div id="chef" class="chef-section__container">
+
+    <div class="chef-section__inner">
+
+        <div class="float__image-wrapper img-aos-zoomIn"><img class="float__image" src="images/chef.jpg"></div>
+        <p class="float__text slideup-aos"><span class="text__chef-name">Ricardo Smith</span> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis vel adipisci voluptate, illum incidunt dolorum. Atque quos ipsum sint consequatur eius, quidem est, quia quam necessitatibus animi neque saepe. Accusamus quaerat repellat, tempora quis, quisquam quidem, est aliquid harum sapiente eligendi consequuntur dolorem eaque omnis eveniet itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error numquam hic temporibus mollitia obcaecati quas atque provident ratione nulla! </p>
+
 
     </div>
+       
 
+    
+    </div>
 
-    <footer id="contact" class="resto">
-        <div class="footer">
-            <h2>follow us</h2>
-            <div class="socmed">
-                <span class="fab fa-facebook"></span>
-                <span class="fab fa-instagram"></span>
-                <span class="fab fa-youtube"></span>
+      
+
+        <footer id="contact" class="section__container footer">
+           
+            <h2 class="footer__title">follow us</h2>
+            <div>
+                <span class="fab fa-facebook footer__icon"></span>
+                <span class="fab fa-instagram footer__icon"></span>
+                <span class="fab fa-youtube footer__icon"></span>
             </div>
-
-            <div class="support-links">
+        
+            <div>
                 <span>Info</span>
                 <span>Support</span>
                 <span>Marketing</span>
             </div>
-
-            <div class="privacy-links">
+        
+            <div>
                 <span>Terms of Use</span>
                 <span>Privacy Policy</span>
             </div>
                 
-
-            <div class="copyright">
-                <span class="far fa-copyright"></span><span>2021</span>
+        
+            <div>
+                <span class="far fa-copyright footer__copyright "></span><span>2021</span>
             </div>
-        </div>
-</footer>
+        
+        </footer>
+        
 
 
  
