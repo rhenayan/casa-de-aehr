@@ -375,7 +375,7 @@ a:focus {
 }
 
 .grid-item__picture:hover {
-    webkit-animation: pan-image 4s ease-out infinite both;
+    -webkit-animation: pan-image 4s ease-out infinite both;
     animation: pan-image 4s ease-out infinite both; 
     
 }
