@@ -82,6 +82,10 @@ a:focus {
     outline:none;
 }
 
+.cursor {
+    cursor: url(icons/expand.png), pointer;
+}
+
 /**buttons**/
 
 .nav {
@@ -103,6 +107,7 @@ a:focus {
    right:0;
    z-index: 100;
    text-align: center;
+   
 
 }
 
@@ -150,6 +155,7 @@ a:focus {
 .menu__item_mobile{
    max-width: 180px;
    margin: 2rem auto;
+  
  
 }
 
@@ -369,7 +375,7 @@ a:focus {
 }
 
 .grid-item__picture:hover {
-    webkit-animation: pan-image 4s ease-out infinite both;
+    -webkit-animation: pan-image 4s ease-out infinite both;
     animation: pan-image 4s ease-out infinite both; 
     
 }
@@ -551,10 +557,14 @@ a:focus {
 
 /*********NEWSLETTER********/
 
-summary {
+details > summary {
     list-style: none;
-
+  }
+  
+details > summary::-webkit-details-marker {
+    display: none;
 }
+  
 
 summary:focus {
     outline:none;
@@ -590,14 +600,6 @@ summary:focus {
   flex-direction:column;
   align-items: center;
   padding: 10rem 0;
-
-
-
-
-
-  
-  
-
 
 }
 
@@ -713,29 +715,32 @@ details[open] summary ~ * {
     color: var(--color-title);
 }
 
+
 /********INTERIOR***********/
 
 
 .grid-container__gallery {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 5rem;
+    gap: 1rem;
     
 }
    
 
 
 .grid-gallery__image {
-    height: 200px;
+    height: 300px;
     transition: transform .5s cubic-bezier(.77,0,.18,1);
-    cursor: pointer;
+   
+    
+   
    
       
 }
 
 .grid-gallery__image:hover {
    transform:scale(.9);
-    
+   
 }
 
 
@@ -744,11 +749,103 @@ details[open] summary ~ * {
      height: 100%;
      display:block;
      object-fit: cover;
+    
+     
+     
       
  }
 
 
 
+
+
+ .modal {
+     position:fixed;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left:0;
+     z-index: 9999;
+     background-color:rgba(37, 68, 65, 0.9);
+     color: var(--color-secondary);
+     pointer-events: none;
+     opacity: 0;
+     font-size: 2.5rem;
+
+   
+ }
+
+
+ .modal__content {
+    width: 90%;
+    max-width: 700px;
+    max-height: 550px;
+    margin:2rem auto; 
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+    
+
+ }
+
+ .modal__button_close {
+   align-self: flex-end;
+   margin-bottom: 1rem;
+   cursor: pointer;
+   padding: 1rem 1.5rem;
+   
+
+}
+
+.modal__button_close:hover {
+    background-color: rgba(85, 12, 24, 0.8);
+    border-radius: 999px;
+    transition: .2s ease-in;
+}
+
+ .modal__image {
+     width:100%;
+     height: 100%;
+     object-fit: cover;
+     
+ }
+
+ .modal__text {
+     margin-top: 1rem;
+     background-color: var(--bg-primary);
+     padding: .5rem 1rem;
+     
+ }
+
+
+ .modal.show-interior {
+     opacity: 1;
+     pointer-events: all;
+ }
+
+ .modal.show-interior .modal__image,
+ .modal.show-interior .modal__text,
+ .modal.show-interior .modal__button_close {
+     animation: zoom .3s linear;
+ }
+
+ @keyframes zoom {
+     from {
+         transform: scale(0);
+
+     }
+     to {
+         transform:scale(1);
+     }
+ }
+
+
+ /* .modal__image {
+     width: 80%;
+     max-width: 700px;
+    
+ } */
 
 
 /****************3RD PAGE****************/
@@ -938,14 +1035,18 @@ details[open] summary ~ * {
   .menu-gallery__item > * {
      width: 100%;
      height: 300px;
+    
+   
   }
 
- 
 
   .img-wrapper img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      -webkit-filter:saturate(0.8);
+      filter:saturate(0.8);
+
       /* filter: drop-shadow(3px 2px 0.1rem var(--color-primary)); */
   }
 
@@ -953,9 +1054,19 @@ details[open] summary ~ * {
 
   .img-wrapper {
       position:relative;
+      overflow:hidden;
+     
   }
 
 
+  .img-wrapper img:hover {
+    animation: pan-image 4s ease-out infinite both;  
+    -webkit-filter:saturate(1.5);
+    filter:saturate(1.5);
+    transition: .3s;
+  }
+
+/* 
   .icon__hover {
     position:absolute;
     top: 0;
@@ -987,7 +1098,7 @@ details[open] summary ~ * {
 .icon__hover span:hover{
     transform: scale(1.5);
     transition: .3s cubic-bezier(.47,0,.74,.71);
-}
+} */
 
   .tab__menu::-webkit-scrollbar,
   .body__inner::-webkit-scrollbar {

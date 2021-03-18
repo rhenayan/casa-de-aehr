@@ -1,8 +1,5 @@
 
-
-
 // toggle mobile menu//
-
 
 const menuToggle = document.querySelector('.menu__toggle');
 const menuList = document.querySelector('.menu__list_mobile');
@@ -23,7 +20,6 @@ function toggleMenu() {
 };
 
 
-
 //sticky navbar after scroll
 
 window.addEventListener("scroll", stickyNav);
@@ -33,14 +29,6 @@ function stickyNav() {
   navMenu.classList.toggle('main-sticky', window.scrollY > 0);
 
 };
-
-
-
-// sticky navbar after scroll page 3
-
-
-
-
 
 
 // change image //
@@ -63,10 +51,7 @@ doubleRoom.addEventListener('click', double);
 function double(){
   changeImg.src="images/double-bed.jpg";
   
-
- 
 };
-
 
 
 superiorRoom.addEventListener('click', superior);
@@ -78,73 +63,23 @@ function superior(){
 
 
 
-// //animate on scroll
-
-// window.addEventListener('scroll', showOnscrollText)
-
-// function showOnscrollText(){
-//   let text=Array.from(document.querySelectorAll('.slideup-aos'));
-  
-//   text.forEach(element => {
-//     if(element.getBoundingClientRect().top < window.innerHeight){
-//       element.classList.add('show-aos');
-//     } else {
-//       element.classList.remove('show-aos');
-//     }
-//   });
+//modal - page 3
 
 
-// };
+// let modal = document.querySelector('.modal');
+// let modalText = document.querySelector('.modal__text');
+// let closeBtn = document.querySelector('.modal__button_close');
+
+// let images= document.querySelectorAll('.grid-gallery__image img');
+
+// images.forEach((image) => {
+// let modal = document.querySelector('.modal');
+// let modalText = document.querySelector('.modal__text');
+// let closeBtn = document.querySelector('.modal__button_close');
+
+// image.addEventListener('click', () => {
+//   modal.classList.add('show');
+// })
 
 
-// //image zoom-in
-
-// window.addEventListener('scroll', showOnscrollImg)
-
-// function showOnscrollImg(){
-//   let img=Array.from(document.querySelectorAll('.img-aos-zoomIn'));
-
-//   img.forEach(element => {
-//     if(element.getBoundingClientRect().top < window.innerHeight){
-//       element.classList.add('zoomIn-img-aos');
-//     } else {
-//       element.classList.remove('zoomIn-img-aos');
-//     }
-//   });
-// }
-
-
-
-// //image sline-in 
-
-// window.addEventListener('scroll', slideOnScroll)
-
-// function slideOnScroll(){
-//   let slide=Array.from(document.querySelectorAll('.img-aos-slide'));
-
-//   slide.forEach(element => {
-//     if(element.getBoundingClientRect().top < window.innerHeight) {
-//       element.classList.add('img-aos-slide-left');
-//     } else {
-//       element.classList.remove('img-aos-slide-left');
-//     }
-//   });
-// }
-
-
-
-// //fadein button 
-
-// window.addEventListener('scroll', showBtn)
-
-// function showBtn(){
-//   let btn=Array.from(document.querySelectorAll('.fadein-aos'));
-
-//   btn.forEach(element => {
-//     if(element.getBoundingClientRect().top < window.innerHeight) {
-//       element.classList.add('fade-in');
-//     } else {
-//       element.classList.remove('fade-in');
-//     }
-//   })
-// }
+// })

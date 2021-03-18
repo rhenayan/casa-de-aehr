@@ -13,6 +13,8 @@
 
     <script defer src="main.js"></script>
     <script defer src="aos.js"></script>
+    <script defer src="modal.js"></script>
+
 
 
     <!--font awesome-->
@@ -29,7 +31,7 @@
 
 <body>
 
-<header class="page__header header__room">
+ <header class="page__header header__room">
     <nav class="nav nav__desktop">
                 
         <div class="menu__mobile menu__mobile_hidden">
@@ -38,11 +40,11 @@
             </div>
 
             <div class="menu__list_mobile menu__list_hidden">
-                <li class="menu__item_mobile"><a class="menu__link"  href="#">Home</a></li>
-                <li class="menu__item_mobile"><a class="menu__link"  href="#about">About</a></li>
-                <li class="menu__item_mobile"><a class="menu__link"  href="#rooms">Rooms</a></li>
-                <li class="menu__item_mobile"><a class="menu__link"  href="#resto">Bar & Restaurant</a></li>
-                <li class="menu__item_mobile"><a class="menu__link"  href="#events">Events</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="index.html">Home</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="index.html">About</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="index.html#rooms">Rooms</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="bar&resto.html">Bar & Restaurant</a></li>
+                <li class="menu__item_mobile"><a class="menu__link"  href="index.html">Events</a></li>
                 <li class="menu__item_mobile"><a class="menu__link"  href="#contact">Contact</a></li>
             </div>
 
@@ -83,7 +85,7 @@
 
     <div class="feature__intro feature__intro-height ">
 
-        <p class="slideup-aos"> Voluptate modi, corrupti explicabo consequatur, voluptatem eum ab voluptatum consectetur deserunt assumenda, autem dolore qui quos aut error.</p>
+        <p class="slideup-aos">You do your thing. Leave the rest to us. Experience the passion of hospitality. See what a difference a stay makes. We love having you here.</p>
 
     </div>
 
@@ -134,18 +136,29 @@
 <div class="grid-container__gallery">
 
    
-    <div class="grid-gallery__image shower img-aos-zoomIn"><img src="images/bathroom-2.jpg" alt="bathroom"></div>
-    <div class="grid-gallery__image jaz img-aos-zoomIn"><img src="images/bathroom-1.jpg" alt="bathroom"></div>
-    <div class="grid-gallery__image cr img-aos-zoomIn"><img src="images/bathroom-3.jpg" alt="bathroom"></div>
+    <div class="grid-gallery__image shower img-aos-zoomIn"><img class="cursor"  src="images/bathroom-2.jpg" alt="Shower"></div>
+    <div class="grid-gallery__image jaz img-aos-zoomIn"><img class="cursor" src="images/bathroom-1.jpg" alt="Bath Tub"></div>
+    <div class="grid-gallery__image cr img-aos-zoomIn"><img class="cursor" src="images/bathroom-3.jpg" alt="Toilet"></div>
    
-    <div class="grid-gallery__image tv img-aos-zoomIn"><img src="images/tv.jpg" alt="bathroom"></div>
-    <div class="grid-gallery__image table img-aos-zoomIn"><img src="images/sofa.jpg" alt="bathroom"></div>
-    <div class="grid-gallery__image aircon img-aos-zoomIn"><img src="images/chair.jpg" alt="bathroom"></div>
+    <div class="grid-gallery__image tv img-aos-zoomIn"><img class="cursor" src="images/tv.jpg" alt="Television"></div>
+    <div class="grid-gallery__image table img-aos-zoomIn"><img class="cursor" src="images/sofa.jpg" alt="Sofa"></div>
+    <div class="grid-gallery__image aircon img-aos-zoomIn"><img class="cursor" src="images/chair.jpg" alt="Chair"></div>
  
-    <div class="grid-gallery__image towels img-aos-zoomIn"><img src="images/towels.jpg" alt="towels"></div>
-    <div class="grid-gallery__image toothbrush img-aos-zoomIn"><img src="images/toothbrush.jpg" alt="toothbrush"></div>
+    <div class="grid-gallery__image towels img-aos-zoomIn"><img class="cursor" src="images/towels.jpg" alt="Towels"></div>
+    <div class="grid-gallery__image toothbrush img-aos-zoomIn"><img class="cursor" src="images/toothbrush.jpg" alt="Toiletries"></div>
   
 
+</div>
+
+<div class="modal">
+    
+    <figure class="modal__content">
+        <span class="fas fa-times modal__button_close"></span>
+        <img class="modal__image" src="images/chinese-1.jpg" alt="Chinese">
+        <figcaption class="modal__text">Sample Text</figcaption>
+    </figure> 
+    
+  
 </div>
 
 
