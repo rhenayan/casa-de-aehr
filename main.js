@@ -1,13 +1,11 @@
 
 // toggle mobile menu//
-
 const menuToggle = document.querySelector('.menu__toggle');
-const menuList = document.querySelector('.menu__list_mobile');
-
 
 menuToggle.addEventListener('click', toggleMenu );
 
 function toggleMenu() {
+  const menuList = document.querySelector('.menu__list_mobile');
 
     if (menuList.style.opacity === "0") {
         menuList.style.opacity = "1";
@@ -16,8 +14,21 @@ function toggleMenu() {
         menuList.style.opacity = "0";
         menuList.style.height = "1vh";
       }
-   
 };
+
+//disappear menu once one of the menu links is clicked //
+
+const link = document.querySelectorAll('.menu__list_mobile .menu__link');
+const newLink = Array.from(link);
+
+newLink.forEach(anchor => {
+  anchor.addEventListener('click', navHide);
+  });
+
+// call toggleMenu Function
+function navHide() {
+   toggleMenu();
+}
 
 
 //sticky navbar after scroll
@@ -29,7 +40,6 @@ function stickyNav() {
   navMenu.classList.toggle('main-sticky', window.scrollY > 0);
 
 };
-
 
 // change image //
 
